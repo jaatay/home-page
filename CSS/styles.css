@@ -1,0 +1,25 @@
+html, body {
+  height: 100%;
+  font-family: "fjalla one" , sans-serif;
+}
+
+#mainHeader {
+  height: 40%;
+  background-color: gray;
+   background: linear-gradient(rgba(0,0,0,1), rgba(255,255,255,0));
+}
+
+#mainFooter {
+  height: 40%;
+  background-color: gray;
+   background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,1));
+   border: 0;
+}
+
+.container-fluid {
+  height: 20%;
+}
+
+h1 {
+  font-family: "metal mania" , cursive;
+}
