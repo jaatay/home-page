@@ -11,31 +11,90 @@
     <link rel="stylesheet" href="CSS/styles.css">
   </head>
   <body>
+    <!--header gradient-->
     <header id="mainHeader">
-
-  </header>
+    </header>
 
     <div class="container-fluid">
+      <!--sticky nav-->
+      <nav class="nav nav-pills flex-row fixed-top justify-content-center">
+        <a class="flex-sm-fill text-sm-center nav-link justify-conent-center" href="mailto:jesse.atay@gmail.com" target="_top">Contact</a>
+        <a id="comingSoon" class="flex-sm-fill text-sm-center nav-link" href="#">Projects</a>
+      </nav>
+    <!--center page-->
       <div class="row h-100">
-        <div class="col-sm-12 my-auto text-center">
-          <h1 class="display-1"><span>{JA};</span></h1>
+        <div class="col-12 my-auto text-center">
+          <h1 id="centerMass" class="display-1">{JA};</h1>
         </div>
-          <div class="col-sm-12 my-auto text-center">
-            <nav class="nav nav-pills flex-column flex-sm-row justify-content-center fixed-top">
-          <a class="flex-sm-fill text-sm-center nav-link active" href="mailto:jesse.atay@gmail.com" target="_top">Contact</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="bio.html">Bio</a>
-          <a id="comingSoon" class="flex-sm-fill text-sm-center nav-link" href="#">Projects</a>
-        </nav>
       </div>
+      <!--bio-->
+      <div id="accordion" role="tablist" class="mx-auto">
+        <div class="card">
+        <div class="card-header bg-dark border-0 rounded" role="tab" id="headingOne">
+          <h5 class="mb-0">
+            <a class = "toggleText collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              genInfo = {
+            </a>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              name: 'Jesse-Atay',<br>
+              location: 'Portland-OR',<br>
+              skills: ['HTML', 'CSS', 'JavaScript',],<br>
+              likes: [<del>'cats',</del> 'writing', 'gaming' + thrones, 'art', 42],<br>
+              xFactor: ['self-starter', 'teamwork', 'motivation']<br>
+              }); <br><br>
+              myPurpose(eat, sleep, code) => {<br>
+              this.life = life;<br>
+              };
+            </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header bg-dark border-0 rounded" role="tab" id="headingTwo">
+          <h5 class="mb-0">
+            <a class="collapsed toggleText" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              rapSheet = {
+            </a>
+          </h5>
+        </div>
+
+        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+          myWork: ['US-MarineCorps' + infantry, 'OIF/OEF'],<br>
+          myWork2: 'EmergencyMedicalTechnician',<br>
+          mySchool: ['B.S.PoliticalScience', 'EMT-B'],<br>
+          });
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header bg-dark border-0 rounded" role="tab" id="headingThree">
+          <h5 class="mb-0">
+            <a class="collapsed toggleText" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              if(time === now){
+            </a>
+          </h5>
+        </div>
+
+      <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body">
+          motivation++;<br>
+          jonSnow !== iceZombie;<br>
+          }
+        </div>
       </div>
     </div>
-
-
-    <a href="bio.html">Page test</a>
-    <div class = "container">
-
-    </div>
-
+    <!--/accordion-->
+  </div>
+    <!--/bio-->
+  <!--/container-->
+  </div>
+<!--footer gradient-->
     <footer id="mainFooter">
     </footer>
 
@@ -43,6 +102,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-
+    <script src="JS/scripts.js"></script>
   </body>
 </html>
